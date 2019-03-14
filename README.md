@@ -185,6 +185,17 @@ Similarly, to run the oracle agent on the courier game:
 ```shell
 bazel run streetlearn/python/ui:oracle_agent -- --dataset_path=<dataset path>
 ```
+## Building the scalable agent in the Streetlearn environment, and training it using StreetLearn datasets
+
+```shell
+export CLIF_PATH=$HOME/opt
+bazel build streetlearn/python:experiment
+bazel run streetlearn/python:experiment -- --dataset_paths=<dataset path> --level_names=<dataset name>
+```
+For more information, using:
+```shell
+bazel run streetlearn/python:experiment -- --help
+```
 
 The human agent and the oracle agent show a **view_image** (on top) and a
 **graph_image** (on bottom).

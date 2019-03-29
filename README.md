@@ -192,13 +192,13 @@ export CLIF_PATH=$HOME/opt
 bazel build streetlearn/python:experiment
 bazel run streetlearn/python:experiment -- --dataset_paths=<dataset path> --level_names=<dataset name>
 ```
+"dataset path" denotes the path of streetlearn datasets
+"dataset name" denotes the streetlearn datasets stored in the <dataset path>
 
 For more information, using:
 ```shell
 bazel run streetlearn/python:experiment -- --help
 ```
-'dataset path' denotes the path of streetlearn datasets
-'dataset name' denotes the streetlearn datasets stored in the 'dataset path'
 
 The human agent and the oracle agent show a **view_image** (on top) and a
 **graph_image** (on bottom).
